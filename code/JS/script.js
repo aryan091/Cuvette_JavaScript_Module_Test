@@ -4,7 +4,7 @@ function comPlay() {
   return pcChoices[Math.floor(Math.random() * pcChoices.length)];
 }
 
-const togBtn = document.querySelector(".btn");
+const togBtn = document.getElementById("ruleButton");
 const togDiv = document.getElementById("ruleList");
 const cross = document.getElementById("cross");
 
@@ -19,26 +19,26 @@ cross.addEventListener("click", () => {
 });
 
 const iconWrapper = document.getElementById("wrapIcon");
-const youPicked = document.querySelector(".left");
+const youPicked = document.getElementById("leftSide");
 const ansText1 = document.getElementById("text1");
 const ansText2 = document.getElementById("text2");
-const pcPicked = document.querySelector(".right");
-const right = document.querySelector(".right");
-const winLoseText = document.querySelector(".ansText");
+const pcPicked = document.getElementById("pc-picked");
+const right = document.getElementById("rightSide");
+const winLoseText = document.getElementById("answerText");
 
-const userRock = document.querySelector(".rockWinUser");
-const userPaper = document.querySelector(".paperWinUser");
-const userScissor = document.querySelector(".scissorWinUser");
+const userRock = document.getElementById("rockWinUs");
+const userPaper = document.getElementById("paperWinUs");
+const userScissor = document.getElementById("scissorWinUs");
 
-const pcRock = document.querySelector(".rockWinPc");
-const pcPaper = document.querySelector(".paperWinPc");
-const pcScissor = document.querySelector(".scissorWinPc");
+const pcRock = document.getElementById("rockWinCom");
+const pcPaper = document.getElementById("paperWinCom");
+const pcScissor = document.getElementById("scissorWinCom");
 
-const userGradient = document.querySelector('.userEclipse');
-const pcGradient = document.querySelector('.pcEclipse');
+const userGradient = document.getElementById("userEc");
+const pcGradient = document.getElementById("pcEc");
 
 const playBtn = document.getElementById("playbtn");
-const nextBtn = document.querySelector(".next-btn");
+const nextBtn = document.getElementById("next-button");
 
 let userScore = parseInt(localStorage.getItem('userScore')) || 0;
 document.getElementById("myScore").innerHTML = localStorage.getItem("userScore");
@@ -62,9 +62,9 @@ function updatePcScore(updatedScore) {
   document.getElementById("pcScore").innerHTML = localStorage.getItem("pcScore");
 }
 
-const rock = document.querySelector(".rockImg");
-const scissor = document.querySelector(".scrImg");
-const paper = document.querySelector(".paperImg");
+const rock = document.getElementById("rockI");
+const scissor = document.getElementById("scrI");
+const paper = document.getElementById("paperI");
 let pc;
 
 rock.addEventListener("click", () => {
