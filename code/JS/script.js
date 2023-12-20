@@ -172,6 +172,7 @@ function win() {
     togBtn.style.left = "1210px";
   } else {
     nextBtn.classList.add("hidden");
+    togBtn.style.left = "1360px";
   }
 }
 
@@ -186,6 +187,7 @@ function lose() {
     togBtn.style.left = "1210px";
   } else {
     nextBtn.classList.add("hidden");
+    togBtn.style.left = "1360px";
   }
 }
 
@@ -199,6 +201,7 @@ function tie() {
     togBtn.style.left = "1210px";
   } else {
     nextBtn.classList.add("hidden");
+    togBtn.style.left = "1360px";
   }
 }
 
