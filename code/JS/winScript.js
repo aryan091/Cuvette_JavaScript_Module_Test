@@ -1,9 +1,8 @@
-const toggleBtn = document.querySelector('.btn');
+const togBtn = document.getElementById("ruleButton");
 const toggleDiv = document.getElementById('ruleList');
 const cross = document.getElementById('cross');
 
-toggleBtn.addEventListener('click', () => {
-    console.log('clicked');
+togBtn.addEventListener('click', () => {
     toggleDiv.classList.remove('hidden');
     cross.classList.remove('hidden');
   });
